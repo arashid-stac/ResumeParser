@@ -33,6 +33,9 @@ public class Reader {
 				JOptionPane.showMessageDialog(null, "Invalid path!", "Error", JOptionPane.ERROR_MESSAGE);
 			} catch (NullPointerException e) {
 				System.exit(0);
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "Invalid file! Please select a PDF file.", "Error", JOptionPane.ERROR_MESSAGE);
+
 			}
 
 		} while (isValidPath == false);
